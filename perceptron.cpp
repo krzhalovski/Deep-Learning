@@ -4,17 +4,6 @@
 #include<algorithm>
 using namespace std;
 
-template<class T>
-T dot_product(vector<T> v1, vector<T> v2) {
-    T sum = 0;
-    for(int i=0; i<v1.size(); i++) sum+=v1[i]*v2[i];
-}
-
-template<class T>
-vector<T> sum(vector<T> v1, vector<T> v2) {
-    vector<T> result(v1.size());
-    for(int i=0; i<v1.size(); i++) result[i]=v1[i]+v2[i];
-}
 class Perceptron{
 private:
     vector<double> weights;
@@ -31,6 +20,7 @@ public:
     }
 
     int predict(vector<double> &features) {
+        printf("Predicting:");
         return (inner_product(weights.begin(), weights.end(), features.begin(), 0) > 0) ? 1 : -1;
     }
 
@@ -49,7 +39,7 @@ public:
 
                 if(error==0) continue;
                 changed = true;
-                
+
                 for(int j=0; j<weights.size(); j++) {
                     weights[j] = weights[j] + learning_rate*error*features[i][j];
                 }
