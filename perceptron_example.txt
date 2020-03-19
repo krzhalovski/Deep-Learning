@@ -1,0 +1,133 @@
+Instantiating Perceptron
+Training Perceptron
+
+Epoch number: 1
+Training on sample: 1 with weights:
+0.000000 1.000000 -1.000000
+
+Training on sample: 2 with weights:
+1.000000 5.000000 4.000000
+
+Training on sample: 3 with weights:
+1.000000 5.000000 4.000000
+
+Training on sample: 4 with weights:
+0.000000 1.000000 3.000000
+
+Epoch number: 2
+Training on sample: 1 with weights:
+-1.000000 0.000000 1.000000
+
+Training on sample: 2 with weights:
+-1.000000 0.000000 1.000000
+
+Training on sample: 3 with weights:
+0.000000 6.000000 2.000000
+
+Training on sample: 4 with weights:
+-1.000000 2.000000 1.000000
+
+Epoch number: 3
+Training on sample: 1 with weights:
+-2.000000 1.000000 -1.000000
+
+Training on sample: 2 with weights:
+-1.000000 5.000000 4.000000
+
+Training on sample: 3 with weights:
+-1.000000 5.000000 4.000000
+
+Training on sample: 4 with weights:
+-2.000000 1.000000 3.000000
+
+Epoch number: 4
+Training on sample: 1 with weights:
+-3.000000 0.000000 1.000000
+
+Training on sample: 2 with weights:
+-3.000000 0.000000 1.000000
+
+Training on sample: 3 with weights:
+-2.000000 6.000000 2.000000
+
+Training on sample: 4 with weights:
+-3.000000 2.000000 1.000000
+
+Epoch number: 5
+Training on sample: 1 with weights:
+-4.000000 1.000000 -1.000000
+
+Training on sample: 2 with weights:
+-3.000000 5.000000 4.000000
+
+Training on sample: 3 with weights:
+-3.000000 5.000000 4.000000
+
+Training on sample: 4 with weights:
+-4.000000 1.000000 3.000000
+
+Epoch number: 6
+Training on sample: 1 with weights:
+-5.000000 0.000000 1.000000
+
+Training on sample: 2 with weights:
+-4.000000 4.000000 6.000000
+
+Training on sample: 3 with weights:
+-4.000000 4.000000 6.000000
+
+Training on sample: 4 with weights:
+-5.000000 0.000000 5.000000
+
+Epoch number: 7
+Training on sample: 1 with weights:
+-6.000000 -1.000000 3.000000
+
+Training on sample: 2 with weights:
+-6.000000 -1.000000 3.000000
+
+Training on sample: 3 with weights:
+-5.000000 5.000000 4.000000
+
+Training on sample: 4 with weights:
+-6.000000 1.000000 3.000000
+
+Epoch number: 8
+Training on sample: 1 with weights:
+-7.000000 0.000000 1.000000
+
+Training on sample: 2 with weights:
+-6.000000 4.000000 6.000000
+
+Training on sample: 3 with weights:
+-6.000000 4.000000 6.000000
+
+Training on sample: 4 with weights:
+-7.000000 0.000000 5.000000
+
+Epoch number: 9
+Training on sample: 1 with weights:
+-8.000000 -1.000000 3.000000
+
+Training on sample: 2 with weights:
+-8.000000 -1.000000 3.000000
+
+Training on sample: 3 with weights:
+-7.000000 5.000000 4.000000
+
+Training on sample: 4 with weights:
+-8.000000 1.000000 3.000000
+
+Epoch number: 10
+Training on sample: 1 with weights:
+-8.000000 1.000000 3.000000
+
+Training on sample: 2 with weights:
+-8.000000 1.000000 3.000000
+
+Training on sample: 3 with weights:
+-8.000000 1.000000 3.000000
+
+Training on sample: 4 with weights:
+-8.000000 1.000000 3.000000
+

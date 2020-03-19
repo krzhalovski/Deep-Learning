@@ -2,25 +2,29 @@
 #include<vector>
 #include<numeric>
 #include<algorithm>
+#include<stdio.h>
 using namespace std;
+
+FILE *file = fopen("perceptron_example.txt", "w");
 
 class Perceptron{
 private:
     vector<double> weights;
     double learning_rate;
+
 public:
     Perceptron(int s){
         weights = vector<double>(s+1);
         generate(weights.begin(), weights.end(), rand);
         learning_rate = 0.5;
     };
+
     Perceptron(vector<double> w, double lr=0.5){
         weights = w;
         learning_rate = lr;
     }
 
     int predict(vector<double> &features) {
-        printf("Predicting:");
         return (inner_product(weights.begin(), weights.end(), features.begin(), 0) > 0) ? 1 : -1;
     }
 
@@ -28,11 +32,11 @@ public:
         int epoch = 1;
         bool changed=true;
         while(epoch<epochs && changed) {
-            printf("Epoch number: %d\n", epoch);
+            fprintf(file, "Epoch number: %d\n", epoch);
             epoch++;
             changed=false;
             for(int i=0; i<features.size(); i++) {
-                printf("Training on sample: %d with weights:\n", i+1);
+                fprintf(file, "Training on sample: %d with weights:\n", i+1);
                 print_weights();
                 int prediction = (predict(features[i])>0) ? 1 : -1;
                 int error = targets[i]-prediction;
@@ -49,10 +53,10 @@ public:
 
     void print_weights() {
         for(int i=0; i<weights.size(); i++) {
-            cout<<weights[i];
-            if(i!=weights.size()-1) cout<<" ";
+            fprintf(file, "%f", weights[i]);
+            if(i!=weights.size()-1) fprintf(file, " ");
         }   
-        cout<<endl;
+        fprintf(file, "\n\n");
     }
 
     ~Perceptron(){}
@@ -68,8 +72,9 @@ int main() {
     vector<int> targets = {1, 1, -1, -1};
     vector<double> weights = {0, 1, -1};
 
-    cout<<"Instantiating"<<endl;
+    fprintf(file, "Instantiating Perceptron\n");
     Perceptron model(weights);
-    cout<<"Training"<<endl;
+
+    fprintf(file, "Training Perceptron\n\n");
     model.fit(features, targets);
 }
